@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta charset="UTF-8">
+        <title>Login page</title>
+        <%- include('./css/style'); %>
+
+    </head>
+    <body>
+        <div class = "container">
+            <div class="formtitle"> 
+                Register:
+            </div>
+                <form id ="myForm" method="POST" action="/register" enctype="multipart/form-data">
+                    <div class="user-dets">
+                        <div class="input">
+                            <span class = "details"> Username</span>
+                            <input type="text" placeholder="Enter your userneame" name="username" required>
+                        </div>
+                        <div class="input">
+                            <span class = "details"> Email</span>
+                            <input type="email" placeholder="Enter your email here" name="email" required>
+                        </div>
+                        <div class="input">
+                            <span class="details">Birthday</span>
+                            <input type="date" placeholder="Enter your birthday here" name="birthday" required>
+                        </div>
+                        <div class="input">
+                            <span class="details"> Password </span>
+                            <input type="password" placeholder="Enter your password here" name="password" required>
+                        </div>
+                        <div class="button">
+                            <input type="submit" value="Register">
+                        </div>
+                    </div>
+                </form>
+            <div class="button2">
+            <p><a href="/login">back</a></p>
+            </div>
+        </div>
+        <script type="text/javascript">
+            let myForm = document.getElementById('myForm');
+            formData = new FormData(myForm);
+
+            for (let [key, value] of formData.entries()) { 
+                console.log(key, value);
+            }
+        </script>
+    </body>
+</html>

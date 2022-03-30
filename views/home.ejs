@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <meta charset="UTF-8">
+        <%- include('./css/style');%>  
+    </head>
+    <body> 
+        <script nonce="r@nd0m">
+    
+        </script>
+            <div class="header">
+                <div class="left-header">
+                    <h1>Home </h1> 
+                </div>
+                <div class="options">
+                    <ul>
+                        <li><p><a href="/update">Edit profile</a></p></li>
+                        <li><p><a href="/posting">Post</a></p></li>
+                        <li><p><a href="/logout">Logout</a></p></li>   
+                    </ul>
+                </div>
+            </div>
+        <div class="container" id="main" >
+            <% for(var i=0; i< descriptions.length; i++){ %>
+            <div class = "posts">
+                <p> Post: <%= descriptions[i] %></p>
+            </div>
+            <% } %>
+        </div>
+    </body>
+</html> 

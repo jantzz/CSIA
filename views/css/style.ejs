@@ -1,0 +1,119 @@
+<style>
+    @import url("https://fonts.googleapis/css2?family=Poppins");
+
+    *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    }
+
+    body{
+    display: flex;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(120deg, #161F6E, #FBD35A );
+    }
+
+    .container{
+    max-width: 600px;
+    width: 100%;
+    background: rgba(255,255,255, 0.5);
+    padding: 25px 30px;
+    border-radius: 5px;
+    }
+
+    .container .formtitle{
+        font-size: 25px;
+        font-weight: 500;
+        position:relative;
+    }
+
+    .container .formtitle::before{
+        content:'';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 3px;
+        width:30px;
+        background:linear-gradient(120deg, #161F6E, #FBD35A );
+    }
+
+    .container form .user-dets{
+        
+        justify-content: space-between;
+    }
+
+    .container .user-dets .input{
+        width: calc(100% /2 - 20px);
+    }
+
+    .user-dets .input .details{
+        font-weight: 500;
+        margin-bottom:50;
+    }
+
+    .user-dets .input input{
+        height:45px;
+        width: 100%;
+    }
+
+    form .button{
+        height: 45px;
+        margin: 45px 0;
+    }
+
+    form .button input{
+        height:100%;
+        width: 100%;
+        outline: none;
+        color: #fff;
+        border: none;
+        background: black;
+    }
+
+    .button2{
+        height:100%;
+        width:10%;
+        outline:none;
+    }
+
+    .header{
+        max-width: 100%;
+        width: 100%;
+        background: rgba(255,255,255, 0.5);
+        padding: 25px 30px;
+        border-radius: 5px;
+        position: absolute;
+        top:0;
+        right:0;
+    }
+    
+    .options{
+        float: right;
+        padding: 5px 5px;
+    }
+    .left-header{
+        float:left;
+    }
+
+    .options a{
+        text-decoration:none;
+        color: black;
+    }
+    
+    .options li{
+        display: inline-block;
+        padding: 5px 5px;
+        background-color:rgba(251,211,90, 0.9);
+        border-radius: 10px;
+    }
+
+    .posts{
+        background: rgba(251,211,90, 0.5);
+        padding: 20px 20px;
+        border-radius: 10px;
+        margin: 10px;
+    }
+</style>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta charset="UTF-8">
+        <title>Login page</title>
+        <%- include('./css/style'); %>
+
+    </head>
+    <body>
+        <div class = "container">
+            <div class="formtitle"> 
+                Update User data:
+            </div>
+                <form method="PUT" action="/update-user" enctype="multipart/form-data">
+                    <div class="user-dets">
+                        <div class="input">
+                            <span class = "details"> Username</span>
+                            <input type="text" placeholder="Enter your userneame" name="username" >
+                        </div>
+                        <div class="input">
+                            <span class = "details"> Email</span>
+                            <input type="email" placeholder="Enter your email here" name="email" >
+                        </div>
+                        <div class="input">
+                            <span class="details">Birthday</span>
+                            <input type="date" placeholder="Enter your birthday here" name="birthday" >
+                        </div>
+                        <div class="input">
+                            <span class="details"> Password </span>
+                            <input type="password" placeholder="Enter your password here" name="password" >
+                        </div>
+                        <div class="button">
+                            <input type="submit" value="update">
+                        </div>
+                    </div>
+                </form>
+            <p><a href="/posts/all"> back</a></p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <meta charset="UTF-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <%- include('./css/style');%>  
+    </head>
+    <body> 
+            <div class="header">
+                <div class="left-header">
+                    <h1>Home </h1> 
+                </div>
+                <div class="options">
+                    <ul>
+                        <li><p><a href="/update">Edit profile</a></p></li>
+                        <li><p><a href="/posting">Post</a></p></li>
+                        <li><p><a href="/logout">Logout</a></p></li>   
+                    </ul>
+                </div>
+            </div>
+            <div class = "container">
+                <div class="formtitle"> 
+                   Create new
+                </div>
+                    <form method="POST" action="/newpost" enctype="multipart/form-data">
+                        <div class="user-dets">
+                            <div class="input">
+                                <span class = "details"> description</span>
+                                <input type="text" placeholder="input description here" name="desc" required>
+                            </div>
+                            
+                            <div class="button">
+                                <input type="submit" value="Post">
+                            </div>
+                        </div>  
+                    </form>
+                    <div class="button2">
+                        <p><a href="/posts/all">back</a></p>
+                    </div>
+            </div>
+    </body>
+</html> 
